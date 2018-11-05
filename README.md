@@ -13,7 +13,7 @@ First, reconfigure the root directory you want mapped to the container in the `d
 
 Then, copy your public key to be used for authentication under this directory, and rename it to `public_key`. This file will be used as the `authorized_keys` file. If you could previously log in to the machine with a private key, you should be able to do the same without change. Alternatively, you may use a password based authentication by uncommenting the line that echoes `root:passwd` into `chpasswd`. **It is highly recommended that you use a more secure password.**
 
-In case you need anything else to run on the server (an autoformatter, for example), simply install them in the Dockerfile. Most of the work should be done on the host machine, though.
+In case you need anything else to run in the container (an autoformatter, or a linter, for example), simply install them in the Dockerfile. Most of the work should be done on the host machine, though.
 
 Finally, with Docker and `docker-compose` properly installed, all one needs to do should be simply
 ```bash
