@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+    nuclide-server:
+        ports:
+            - '2022:22'
+            - '9090-9093:9090-9093'
+        volumes:
+            - /home/morton/workspace:/root/workspace
+        container_name: nuclide-server
+        image: 'nuclide-server:latest'
