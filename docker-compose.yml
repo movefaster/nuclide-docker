@@ -5,6 +5,6 @@ services:
             - '2022:22'
             - '9090-9093:9090-9093'
         volumes:
-            - /home/morton/workspace:/root/workspace
+            - /path/to/workspace:/root/workspace
         container_name: nuclide-server
         image: 'nuclide-server:latest'
